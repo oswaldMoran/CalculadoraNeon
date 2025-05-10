@@ -1,38 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora Neon</title>
+    <meta name="description" content="Calculadora con diseño neon">
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
-    <div class="calculadora">
-        <div class="pantalla"> 0 </div>
-
-        <button class="btn" id="c">C</button>  <!-- shift + alt y teclas de direccion para duplicar  -->
-        <button class="btn" id="borrar">←</button>
-        <button class="btn">/</button>
-        <button class="btn">*</button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn">-</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn">+</button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn" id="igual" >=</button>
-        <button class="btn" id="cero">0</button>
-        <button class="btn">.</button>
+    <main class="contenedor-principal">
+      <!--  <h1 class="sr-only">Calculadora Neon</h1> -->
         
+        <div class="calculadora" aria-label="Calculadora">
+            <div class="pantalla" aria-live="polite" aria-label="Pantalla de resultados">0</div>
 
-    </div>
+            <button class="btn" id="c" aria-label="Borrar todo">C</button>
+            <button class="btn" id="borrar" aria-label="Borrar último dígito">←</button>
+            <button class="btn operador" aria-label="Dividir">/</button>
+            <button class="btn operador" aria-label="Multiplicar">×</button>
+            
+            <button class="btn numero" aria-label="Siete">7</button>
+            <button class="btn numero" aria-label="Ocho">8</button>
+            <button class="btn numero" aria-label="Nueve">9</button>
+            <button class="btn operador" aria-label="Restar">-</button>
+            
+            <button class="btn numero" aria-label="Cuatro">4</button>
+            <button class="btn numero" aria-label="Cinco">5</button>
+            <button class="btn numero" aria-label="Seis">6</button>
+            <button class="btn operador" aria-label="Sumar">+</button>
+            
+            <button class="btn numero" aria-label="Uno">1</button>
+            <button class="btn numero" aria-label="Dos">2</button>
+            <button class="btn numero" aria-label="Tres">3</button>
+            <button class="btn" id="igual" aria-label="Igual">=</button>
+            
+            <button class="btn numero" id="cero" aria-label="Cero">0</button>
+            <button class="btn" aria-label="Punto decimal">.</button>
+        </div>
+    </main>
 
     <script src="Script.js"></script>
-    
 </body>
 </html>
